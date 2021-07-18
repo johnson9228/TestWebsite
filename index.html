@@ -1,10 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="This is a test website" />
     <link rel="stylesheet" href="style.css" />
     <title>TEST website</title>
+    <style>
+      #huehue{
+        padding:7% 15%;
+        margin-top: 50%;
+        text-align:center;
+        background-color:#000;
+      }
+      .visible{
+        visibility:hidden;
+      }
+
+    </style>
+
+
 </head>
 
 <body>
@@ -13,21 +27,28 @@
         <ul>
             <li title="Website Home"><a class="current" href="index.html">Home</a></li>
             <li title="Things about me"><a href="about.html">About Me</a></li>
-            <li title="How to contact me"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" 
+            <li title="How to contact me"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
                 target="_blank">Contact Me</a></li>
-            <li title="Links to my social media"><a href="https://www.youtube.com/watch?v=jxo_K7JLZxQ&ab_channel=TechHelpDrew" target="_blank">My Socials</a></li>
+            <li class="call" title="Links to my social media"><a href="#huehue">My Socials</a></li>
         </ul>
     </nav>
     <h1 class="title">This page is empty, just like my life</h1>
     <header>
     </header>
     <main>
-
+            <div id ="huehue" class = "huehue visible"> <iframe width="1000" height="700" src="https://www.youtube.com/embed/gat0s4Zl_iI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
     </main>
+
     <footer>
     </footer>
+
+    <script type="text/javascript">
+      document.querySelector(".call").addEventListener("click",function(){
+        document.querySelector("#huehue").classList.remove("visible");
+      })
+    </script>
 </body>
 
 
