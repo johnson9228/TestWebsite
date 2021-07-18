@@ -1,11 +1,12 @@
 ﻿*{
      margin: 0;
      padding: 0;
+     color: #ffffff;
      
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #00a6fb;
 }
 
 p{
@@ -22,7 +23,9 @@ h2{
 }
 h1{
     padding:30px;
+    margin-top: 250px;
     font-size: 60px;
+    text-align: center;
 
 }
 .navbar {
@@ -30,7 +33,8 @@ h1{
     top: 0;
     width: 100%;
     height: 100px;
-    background-color: #00a6fb;
+    text-align: right;
+    
     
 }
 
@@ -56,6 +60,6 @@ ul li a:hover:not(.current) {
 }
 
 .current {
-    background-color: #0582ca;
+    color: #0582ca;
 }
 
